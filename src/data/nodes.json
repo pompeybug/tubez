@@ -1,0 +1,214 @@
+[{
+		"id": "hard",
+		"title": "The Hard",
+		"lat": 50.79773,
+		"lon": -1.106207,
+    "hint": 3
+	},
+	{
+		"id": "cosham",
+		"title": "Cosham\nStation",
+		"lat": 50.841923,
+		"lon": -1.067326,
+    "hint": 1
+	},
+  {
+    "id": "domum",
+    "title": "Domum Road West Junction",
+    "lat": 50.821142,
+    "lon": -1.067580,
+    "waypoint": true
+  },
+  {
+    "id": "chiking",
+    "title": "Chichester / Kingston Junction",
+    "lat": 50.8136208,
+    "lon": -1.0680772,
+    "waypoint": true
+  },
+  {
+    "id": "chipres",
+    "title": "Chichester / Preston Junction",
+    "lat": 50.814022,
+    "lon": -1.069850,
+    "waypoint": true
+  },
+  {
+		"id": "marriott",
+		"title": "Marriott",
+		"lat": 50.846196,
+		"lon": -1.088269
+	},
+	{
+		"id": "highbury",
+		"title": "Highbury",
+		"lat": 50.837039,
+		"lon": -1.065631
+	},
+	{
+		"id": "ppark",
+		"title": "Paulsgrove Park",
+		"lat": 50.849802,
+		"lon": -1.093462
+	},
+	{
+		"id": "fratton",
+		"title": "Fratton",
+		"lat": 50.796482,
+		"lon": -1.073871,
+    "hint": 2
+	},
+	{
+		"id": "fpark",
+		"title": "Fratton Park",
+		"lat": 50.796029,
+		"lon": -1.066961,
+    "hint": 2
+	},
+	{
+		"id": "rudmore",
+		"title": "Rudmore\nRoundabout",
+		"lat": 50.814129,
+		"lon": -1.085930,
+    "hint": 3
+
+	},
+	{
+		"id": "copnor",
+		"title": "Copnor",
+		"lat": 50.814021,
+		"lon": -1.064644,
+    "hint": 2
+	},
+	{
+		"id": "kingston",
+		"title": "Kingston Cemetery",
+		"lat": 50.806335,
+		"lon": -1.067219
+	},
+	{
+		"id": "ovil",
+		"title": "Ocean\nVillage",
+		"lat": 50.816758,
+		"lon": -1.054602,
+    "hint": 1
+	},
+	{
+		"id": "ferry",
+		"title": "Hayling\nFerry",
+		"lat": 50.796038,
+		"lon": -1.029797
+	},
+	{
+		"id": "northend",
+		"title": "North End",
+		"lat": 50.815702,
+		"lon": -1.079664,
+    "hint": 1
+	},
+
+	{
+		"id": "eastney",
+		"title": "Eastney\nSwimming Pool",
+		"lon": -1.044673,
+		"lat": 50.786175,
+    "hint": 2
+	},
+	{
+		"id": "hilsea",
+		"title": "Hilsea",
+		"lon": -1.074085,
+		"lat": 50.836627
+
+	},
+	{
+		"id": "pier",
+		"title": "Southsea Pier",
+		"lon": -1.076323,
+		"lat": 50.779382,
+    "hint": 2
+	},
+	{
+		"id": "modvil",
+		"title": "Model Village",
+		"lon": -1.067625,
+		"lat": 50.780450,
+    "hint": 2
+	},
+	{
+		"id": "mbtn",
+		"title": "Mountbatten\nCentre",
+		"lon": -1.085265,
+		"lat": 50.824564,
+    "hint": 3
+
+	},
+	{
+		"id": "spindr",
+		"title": "Spinnaker Drive\nJunction",
+		"lon": -1.081059,
+		"lat": 50.830813,
+    "hint": 3
+	},
+	{
+		"id": "havrd",
+		"title": "Havant Road",
+		"lon": -1.037800,
+		"lat": 50.846858
+	},
+  {
+		"id": "mcom",
+		"title": "Milton Common",
+		"lon": -1.051421,
+		"lat": 50.800382,
+    "hint": 1
+	},
+  {
+		"id": "easternrd",
+		"title": "Eastern Road",
+		"lon": -1.043696,
+		"lat": 50.815325
+	},
+  {
+    "id": "mlock",
+    "title": "Milton Locks",
+    "lon": -1.039134,
+    "lat": 50.796505,
+    "hint": 4
+  },
+  {
+    "id": "ps",
+    "title": "Portsmouth and\nSouthsea Station",
+    "lon": -1.091083,
+    "lat": 50.798198,
+    "hint": 1
+  },
+  {
+    "id": "guildhall",
+    "title": "Portsmouth\nGuildhall",
+    "lon": -1.092907,
+    "lat": 50.797669,
+    "hint": 2
+  },
+  {
+    "id": "museum",
+    "title": "Museum Road\nRoundabout",
+    "lon": -1.095526,
+    "lat": 50.791275,
+    "hint": 3
+  },
+  {
+    "id": "common",
+    "title": "Southsea\nCommon",
+    "lon": -1.098101,
+    "lat": 50.787660,
+    "hint": 3
+  },
+  {
+    "id": "esplanade",
+    "title": "Clarence Esplanade",
+    "lon": -1.093475,
+    "lat": 50.780892,
+    "hint": 4
+  }
+]
