@@ -2,6 +2,24 @@
 
 A tube-map diagram generator.  Created as an investigation into the visualisation of Portsmouth's quieter cycle routes project.
 
+## Download
+
+To get a local copy:
+```shell
+git clone https://github.com/pompeybug/tubez.git
+```
+
+## Run
+If you're using a browser that allows javascript to load `file://` addresses open `src/index.html` in that browser.
+
+To work with browsers that are more strict about security, install and run a small local server thus:
+```shell
+npm install
+npm start
+```
+... and open [http://127.0.0.1:8080](http://127.0.0.1:8080)
+
+
 # Architecture
 
 ## Software Architecture
@@ -13,7 +31,7 @@ Data is loaded by `load.js` and when both files are loaded they are assembled in
 Currently rendering is achieved by `draw.raphael.js`
 
 ### quantize.js
-A workin progress...
+A workin progress ... pressing `q` moves the nodes to test that modifying data results in a successful update of the diagram.
 
 ### your_new_file.js
 Additional tools may listen for the `tubedataready` event, mutate the data, and trigger a redraw by dispatching a `redrawtubemap` event with the data to be shown, thus:
