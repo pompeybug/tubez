@@ -1,0 +1,46 @@
+[
+  {
+    "id": "green",
+    "title": "Paulsgrove to The Hard",
+    "color": "#0fb999",
+    "nodes": ["ppark", "marriott", "hilsea", "spindr", "mbtn", "rudmore", "hard"]
+  },
+  {
+    "id": "tan",
+    "title": "Gunwharf Quays to Hayling Island Ferry",
+    "color": "#cb2",
+    "nodes": ["pier", "modvil", "eastney", "ferry"]
+  },
+  {
+    "id": "orange",
+    "title": "Havant Road to Milton Parade",
+    "color": "#FB0",
+    "nodes": ["havrd", "easternrd","mcom",  "eastney"]
+  },
+  {
+    "id": "lime",
+    "title": "Rudmore Roundabout to Eastern Road",
+    "color": "#ADFF2F",
+    "nodes": ["rudmore", "northend", "copnor", "ovil", "easternrd"]
+  },
+  {
+    "id": "grey",
+    "title": "Portsmouth and Southsea Station to Milton Locks",
+    "color": "#999",
+    "nodes": ["ps", "fpark", "mcom", "mlock"]
+  },
+  {
+    "id": "red",
+    "title": "Commercial Road / Guildhall to Seafront",
+    "color": "#E33",
+    "nodes": ["guildhall", "museum", "common", "esplanade"]
+  },
+  {
+    "id": "navy",
+    "title": "Cosham Station to Fratton Station",
+    "color": "#000099",
+    "nodes": ["cosham", "highbury", "domum", "chiking", "chipres", "kingston", "fratton"]
+  }
+
+
+]
