@@ -6,8 +6,8 @@
         routes: true
     };
     const divider = 2;
-    const width = 3200;
-    const height = 3200;
+    const width = 800;
+    const height = 800;
     const mult = width / divider;
     const unit = Math.min(width, height) / 100;
     const smallUnit = unit / 5;

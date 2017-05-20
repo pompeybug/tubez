@@ -1,98 +1,106 @@
 {
-	"name": "tubez",
-	"version": "1.0.0",
-	"description": "A tube map for cycle ways.",
-	"main": "index.js",
-	"scripts": {
-		"start": "node node_modules/http-server/bin/http-server src -c-1 -o/ -s"
-	},
-	"keywords": [
-		"tube",
-		"underground",
-		"cycle",
-		"route",
-		"safe",
-		"quiet",
-		"quality"
-	],
-	"author": "Rich Boakes <rjb@boakes.org> (http://boakes.org/)",
-	"license": "ISC",
-	"eslintConfig": {
-		"strict": ["error", "global"],
-		"env": {
-			"browser": true,
-			"es6": true
-		},
-		"rules": {
-      "strict": ["error", "safe"],
-			"no-console": [
-				"error",
-				{
-					"allow": [
-						"warn",
-						"error",
-						"log"
-					]
-				}
-			],
-			"no-var": [
-				"error"
-			],
-			"indent": [
-				"error",
-				4
-			],
-			"linebreak-style": [
-				"error",
-				"unix"
-			],
-			"quotes": [
-				"error",
-				"double",
-				{
-					"allowTemplateLiterals": true
-				}
-			],
-			"semi": [
-				"error",
-				"always"
-			],
-			"no-use-before-define": [
-				"error"
-			],
-			"space-in-parens": [
-				2,
-				"never"
-			],
-			"operator-assignment": [
-				"error",
-				"never"
-			],
-			"arrow-body-style": [
-				"error",
-				"as-needed"
-			],
-			"no-multiple-empty-lines": [
-				"error",
-				{
-					"max": 5,
-					"maxEOF": 1
-				}
-			],
-			"func-names": [
-				"error",
-				"never"
-			],
-			"keyword-spacing": [
-				"error",
-				{
-					"after": true
-				}
-			]
-		}
-	},
-	"devDependencies": {
-		"http-server": "^0.10.0",
-		"raphael": "^2.2.7"
-	}
+  "name": "tubez",
+  "version": "1.0.0",
+  "description": "A tube map for cycle ways.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server src -c-1 -o/ -s",
+    "deploy": "node node_modules/gh-pages/bin/gh-pages -d src"
+  },
+  "keywords": [
+    "tube",
+    "underground",
+    "cycle",
+    "route",
+    "safe",
+    "quiet",
+    "quality"
+  ],
+  "author": "Rich Boakes <rjb@boakes.org> (http://boakes.org/)",
+  "license": "ISC",
+  "eslintConfig": {
+    "strict": [
+      "error",
+      "global"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "rules": {
+      "strict": [
+        "error",
+        "safe"
+      ],
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error",
+            "log"
+          ]
+        }
+      ],
+      "no-var": [
+        "error"
+      ],
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double",
+        {
+          "allowTemplateLiterals": true
+        }
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-use-before-define": [
+        "error"
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ],
+      "operator-assignment": [
+        "error",
+        "never"
+      ],
+      "arrow-body-style": [
+        "error",
+        "as-needed"
+      ],
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 5,
+          "maxEOF": 1
+        }
+      ],
+      "func-names": [
+        "error",
+        "never"
+      ],
+      "keyword-spacing": [
+        "error",
+        {
+          "after": true
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "http-server": "^0.10.0",
+    "raphael": "^2.2.7"
+  }
 }

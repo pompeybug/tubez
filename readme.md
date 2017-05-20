@@ -2,6 +2,8 @@
 
 A tube-map diagram generator.  Created as an investigation into the visualisation of Portsmouth's quieter cycle routes project.
 
+A recent snapshot of the work in development can ve seen at https://pompeybug.github.io/tubez/
+
 ## Download
 
 To get a local copy:
