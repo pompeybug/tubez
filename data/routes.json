@@ -21,7 +21,7 @@
     "id": "lime",
     "title": "Rudmore Roundabout to Eastern Road",
     "color": "#ADFF2F",
-    "nodes": ["rudmore", "northend", "copnor", "ovil", "easternrd"]
+    "nodes": ["rudmore", "northend", "chipres","chiking", "copnor", "ovil", "easternrd"]
   },
   {
     "id": "grey",

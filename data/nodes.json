@@ -16,8 +16,7 @@
     "id": "domum",
     "title": "Domum Road West Junction",
     "lat": 50.821142,
-    "lon": -1.067580,
-    "waypoint": true
+    "lon": -1.067580
   },
   {
     "id": "chiking",
@@ -167,7 +166,8 @@
 		"id": "easternrd",
 		"title": "Eastern Road",
 		"lon": -1.043696,
-		"lat": 50.815325
+		"lat": 50.815325,
+    "hint": 1
 	},
   {
     "id": "mlock",

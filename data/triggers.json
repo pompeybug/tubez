@@ -1,0 +1,7 @@
+[
+  { "key": "q","event": "toggle_quantum_stepping" },
+	{ "key": "w","event": "toggle_waypoint_visibility" },
+	{ "key": "e","event": "toggle_expanding_single_nodes" },
+	{ "key": "r","event": "toggle_route_stretching" },
+	{ "key": "s","event": "toggle_slice_and_shift" }
+]
