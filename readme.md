@@ -27,7 +27,7 @@ npm start
 ## Software Architecture
 
 ### load.js
-Data is loaded by `load.js` and when both files are loaded they are assembled into a single object thus`{ nodes: {...}, routes: {...} }` and a `tubemapdataready` event is fired.  The event object's `details` attribute contains all the data.
+Data is loaded by `load.js` and when both files are loaded they are assembled into a single object thus`{ nodes: {...}, routes: {...} }` and a `data_ready` event is fired.  The event object's `details` attribute contains all the data.
 
 ### draw.raphael.js
 Currently rendering is achieved by `draw.raphael.js`
@@ -80,3 +80,17 @@ Each object contains an `id` that must be unique, a `title` that can be displaye
 ...etc
 ]
 ```
+
+### triggers.json
+An array that associates keys pressed with program events.  Any key/event association added here is loaded on startup and the event is fired each time the key is pressed.
+[
+  { "key": "q","event": "toggle_quantum_stepping" },
+	{ "key": "w","event": "toggle_waypoint_visibility" },
+	{ "key": "e","event": "toggle_expanding_single_nodes" },
+	{ "key": "r","event": "toggle_route_stretching" },
+	{ "key": "s","event": "toggle_slice_and_shift" }
+]
+
+
+## Credits / Third Party Licenses
+Freeware London Underground font by Jonathan Paterson - http://www.fontspace.com/jonathan-paterson/london-tube

@@ -1,4 +1,14 @@
-(function () {
+/**
+ * Data loading utilities.
+ *
+ * This code loads nodes, routes and triggers.
+ *
+ * Once all data is loaded a data_ready event is fired.
+ *
+ * The detail attribute of this event contains a data object
+ * that encapsulates all the loaded data.
+ */
+(function() {
     "use strict";
     const debug = false;
     const accuracy = 4;
@@ -25,7 +35,9 @@
             },
         };
 
-        if (debug) dumpdata();
+        if (debug) {
+            dumpdata();
+        }
 
         // first. find the max and min lat and long
         for (const node of data.nodes) {
@@ -35,7 +47,9 @@
             xt.lon.min = Math.min(xt.lon.min, node.lon);
         }
 
-        if (debug) console.log("Extents:", JSON.stringify(xt, null, 4));
+        if (debug) {
+            console.log("Extents:", JSON.stringify(xt, null, 4));
+        }
 
         xt.lat.diff = xt.lat.max - xt.lat.min;
         xt.lon.diff = xt.lon.max - xt.lon.min;
@@ -53,7 +67,9 @@
             node.lat = node.lat / xt.divideByMe;
             node.lon = node.lon / xt.divideByMe;
         }
-        if (debug) console.log("Extents:", JSON.stringify(xt, null, 4));
+        if (debug) {
+            console.log("Extents:", JSON.stringify(xt, null, 4));
+        }
         xt.lat.divided = xt.lat.diff / xt.divideByMe;
         xt.lon.divided = xt.lon.diff / xt.divideByMe;
 
@@ -63,11 +79,12 @@
             node.lat = node.lat + xt.lat.divided - 1.5;
             node.lon = node.lon + xt.lon.divided - 1.5;
         }
-        if (debug) dumpdata();
+        if (debug) {
+            dumpdata();
+        }
     }
 
     function prepRealNodes() {
-
         const findNode = function(id, nodes) {
             return nodes.find((e) => e.id == id);
         };
@@ -77,20 +94,23 @@
             for (const name of route.nodes) {
                 const found = findNode(name, data.nodes);
                 if (!found) {
-                  console.error(`Route ${route.title} references node "${name}" which does not exist.`)
+                    console.error(`Route ${route.title} references node "${name}" which does not exist.`);
                 } else {
-                  route.n.push(found);
+                    route.n.push(found);
                 }
             }
-            if (debug) console.log("Route nodes found:", route.n);
+            if (debug) {
+                console.log("Route nodes found:", route.n);
+            }
         }
     }
 
     function prep() {
         // load all data files
         const load = {
-            "nodes": fetch("data/nodes.json"),
-            "routes": fetch("data/routes.json"),
+            nodes: fetch("data/nodes.json"),
+            routes: fetch("data/routes.json"),
+            triggers: fetch("data/triggers.json"),
         };
 
         const ready = {};
@@ -106,18 +126,26 @@
             .then((r) => r.json())
             .then((o) => data.routes = o);
 
+            // parse loaded routes and assign to data.routes
+        ready.triggers = load.triggers // load data
+            .then((r) => r.json())
+            .then((o) => data.triggers = o);
+
+
         // when they're all loaded
         const loaded = Promise.all(Object.values(ready));
 
         loaded.then(() => {
             prepRealNodes();
-            const event = new CustomEvent("tubemapdataready", {
-                "detail": data,
+            const event = new CustomEvent("data_ready", {
+                detail: data,
             });
-            if (debug) console.log("Dispatching:", event);
+            if (debug) {
+                console.log("Dispatching:", event);
+            }
             document.dispatchEvent(event);
         });
     }
 
     window.addEventListener("load", prep);
-})();
+}());
